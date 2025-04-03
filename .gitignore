@@ -1,0 +1,30 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+package-lock.json
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+prisma
+.vscode
+# Local env files
+.env
+.env.*
+!.env.example
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

@@ -1,0 +1,50 @@
+@import '../base.scss';
+
+.posts {
+    display: grid;
+    place-content: center;
+}
+
+.post {
+    $padding: 20px;
+
+    margin-top: 20px;
+    background-color: $primary;
+    border-radius: $border-radius;
+    padding: $padding $padding $padding $padding;
+
+    width: 80vw;
+    max-width: 800px;
+}
+
+#ptitle {
+    font-size: 20px;
+    margin: 0;
+
+    text-align: center;
+
+    width: 300px;
+
+    @include textEllipsis();
+}
+
+#pauthor {
+    max-width: 150px;
+    @include textEllipsis();
+}
+
+p,
+a {
+    text-align: center;
+}
+
+.post-author-img {
+    width: 30px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 470px) {
+    #pauthor {
+        display: none;
+    }
+}

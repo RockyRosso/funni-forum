@@ -1,0 +1,57 @@
+@import '../base.scss';
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    z-index: 9;
+}
+
+.dropdown-btn {
+    @include textEllipsis();
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $sub;
+
+    margin-top: 20px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    width: 100%;
+
+    left: 50%;
+    transform: translate(-50%);
+
+    z-index: 1;
+
+    @include boxShadow();
+
+    &.dropdown-content-relative {
+        position: relative !important;
+    }
+}
+
+.dropdown-option-select {
+    background-color: $sub;
+
+    font-size: 15px !important;
+
+    width: 100%;
+    max-width: 100%;
+    max-height: 100px;
+
+    border-radius: 0 !important;
+}
+
+.dropdown:focus-within {
+    .dropdown-content {
+        display: block;
+        position: absolute;
+        z-index: 10;
+    }
+}

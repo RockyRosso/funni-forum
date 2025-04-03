@@ -1,0 +1,44 @@
+@import '../base.scss';
+
+.dropdown#cs,
+.dropdown-btn#cs {
+    width: 100%;
+}
+
+.dropdown-btn#cs {
+    $pad: 10px;
+
+    font-size: 30px;
+
+    border-style: solid;
+    border-color: $sub;
+    border-width: 5px;
+
+    padding: $pad $pad $pad $pad !important;
+}
+
+.dropdown-option-select#cs {
+    display: flex;
+    gap: 10px;
+
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: start;
+}
+
+.category-option-title {
+    font-size: 20px;
+    width: 80%;
+    margin: 0;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.category-option-info {
+    text-decoration: underline;
+    font-size: 15px;
+
+    text-align: right;
+}

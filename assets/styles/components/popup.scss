@@ -1,0 +1,43 @@
+@import '../base.scss';
+
+.popup-container {
+    position: fixed;
+
+    bottom: 0;
+    left: 50%;
+
+    transform: translate(-50%);
+
+    margin-bottom: 20px;
+
+    z-index: 10;
+}
+
+.popup-content {
+    $padding: 20px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 50px;
+
+    background-color: $primary;
+
+    padding: 10px $padding 10px $padding;
+
+    border-style: solid;
+
+    &[data-popup-style='error'] {
+        border-color: $danger;
+    }
+
+    &[data-popup-style='success'] {
+        border-color: $success;
+    }
+
+    @include boxShadow();
+}

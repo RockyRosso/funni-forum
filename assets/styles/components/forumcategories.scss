@@ -1,0 +1,30 @@
+@import '../base.scss';
+
+.categories {
+    $pad: 20px;
+
+    display: flex;
+    gap: 10px;
+
+    background-color: $sub;
+
+    padding: $pad $pad $pad $pad;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: scroll;
+
+    scrollbar-width: none;
+}
+
+.category-btn {
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1130px) {
+    .categories {
+        justify-content: start;
+    }
+}

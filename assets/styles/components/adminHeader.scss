@@ -1,0 +1,10 @@
+.btn-scroll {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    overflow-x: scroll;
+
+    scrollbar-width: none;
+}

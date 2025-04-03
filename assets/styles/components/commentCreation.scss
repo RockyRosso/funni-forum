@@ -1,0 +1,16 @@
+@import '../base.scss';
+
+.cc-container {
+    margin-top: 20px;
+}
+
+.cc-create-btn {
+    position: relative;
+    left: 50%;
+
+    transform: translate(-50%);
+
+    text-align: center;
+
+    margin-top: 20px;
+}

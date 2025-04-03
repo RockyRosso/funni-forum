@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /posts/*
+Allow: /policies
+Allow: /policies/*
+Allow: /users/*
+Disallow: /personal/*
+Disallow: /api/*
+Disallow: /admin/*
+Disallow: /posteditor

@@ -1,0 +1,15 @@
+@import '../base.scss';
+
+.auth-form {
+    @include form(900px);
+
+    @include boxShadow();
+}
+
+.oauth-button {
+    width: 100%;
+}
+
+input {
+    background-color: $primary !important;
+}

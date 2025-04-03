@@ -1,0 +1,24 @@
+@import '../base.scss';
+
+.uploader-container {
+    $padding: 20px;
+
+    display: grid;
+    place-content: center;
+
+    background-color: $primary;
+
+    padding: $padding $padding $padding $padding;
+
+    border-radius: $border-radius;
+}
+
+.uploader-file {
+    position: relative;
+
+    display: block;
+
+    min-height: 200px;
+    max-height: 500px;
+    width: 100%;
+}

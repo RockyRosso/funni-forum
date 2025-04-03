@@ -1,0 +1,84 @@
+@import '../base.scss';
+
+$player-radius: 15px;
+
+.vid {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.vid-container {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.vid-controls {
+    position: absolute;
+
+    display: flex;
+
+    bottom: 0;
+    width: 100%;
+
+    background: $primary;
+
+    transform: translateY(0);
+}
+
+.vid-controls-option {
+    $pad: 10px;
+
+    padding: $pad $pad $pad $pad;
+
+    background-color: transparent;
+
+    border-radius: 0;
+    font-size: 1em;
+}
+
+.vid-controls-options {
+    display: flex;
+    align-items: center;
+
+    &.primary {
+        width: 90%;
+        min-width: 10px;
+    }
+
+    &.secondary {
+        margin-left: auto;
+    }
+}
+
+.vid-controls-volume {
+    width: 100px;
+}
+
+.vid-progress {
+    flex: 1 1 0%;
+    position: relative;
+    display: flex;
+
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+
+    height: 5px;
+
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    height: 15px;
+}
+
+.vid-progress-filled {
+    width: 50%;
+    background: $secondary;
+    flex: 0;
+    flex-basis: 0%;
+}
